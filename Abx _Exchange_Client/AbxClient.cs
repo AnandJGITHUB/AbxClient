@@ -13,8 +13,8 @@ namespace Abx__Exchange_Client
     {
         private readonly string hostIP;
         private readonly int port;
-        private readonly Dictionary<int, Packet> _packets = new();
-
+        private readonly Dictionary<int, Packet> packets = new();
+        private const string fileName = "packets.json";
         public AbxClient(string host, int port)
         {
             hostIP = host;
@@ -29,12 +29,12 @@ namespace Abx__Exchange_Client
                 foreach (var seq in missing)
                 {
                     var packet = RequestMissingPacket(seq);
-                    if (packet != null) _packets[packet.Sequence] = packet;
+                    if (packet != null) packets[packet.Sequence] = packet;
                 }
 
-                var ordered = _packets.Values.OrderBy(p => p.Sequence).ToList();
+                var ordered = packets.Values.OrderBy(p => p.Sequence).ToList();
                 var json = JsonSerializer.Serialize(ordered, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText("packets.json", json);
+                File.WriteAllText(fileName, json);
 
                 Console.WriteLine("Done! JSON saved as packets.json");
 
@@ -58,7 +58,7 @@ namespace Abx__Exchange_Client
                 while (stream.Read(buffer, 0, 17) == 17)
                 {
                     var packet = Packet.Parse(buffer);
-                    _packets[packet.Sequence] = packet;
+                    packets[packet.Sequence] = packet;
                
                 }
                 client.Close();
@@ -79,11 +79,11 @@ namespace Abx__Exchange_Client
 
         private List<int> GetMissingSequences()
         {
-            var sequences = _packets.Keys.OrderBy(k => k).ToList();
+            var sequences = packets.Keys.OrderBy(k => k).ToList();//order by sequence id
             var missing = new List<int>();
-            for (int i = sequences[0]; i < sequences[^1]; i++)
+            for (int i = sequences[0]; i < sequences[sequences.Count-1]; i++)
             {
-                if (!_packets.ContainsKey(i)) missing.Add(i);
+                if (!packets.ContainsKey(i)) missing.Add(i);
             }
             return missing;
         }
