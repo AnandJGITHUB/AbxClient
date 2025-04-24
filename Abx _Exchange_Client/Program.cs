@@ -4,9 +4,11 @@ using System;
 
 class Program
 {
+    private const string serverIp= "127.0.0.1";
+    private const int serverPort = 3000;
     static void Main(string[] args)
     {
-        var client = new AbxClient("127.0.0.1", 3000);
+        var client = new AbxClient(serverIp, serverPort);
         client.Run();
     }
 }

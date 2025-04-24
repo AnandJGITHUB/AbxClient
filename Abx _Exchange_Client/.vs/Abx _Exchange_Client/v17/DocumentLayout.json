@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|c:\\projects\\github\\abx _exchange_client\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|solutionrelative:packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|c:\\projects\\github\\abx _exchange_client\\abxclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|solutionrelative:abxclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|c:\\projects\\github\\abx _exchange_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|c:\\projects\\github\\abx _exchange_client\\abxclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|solutionrelative:abxclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|c:\\projects\\github\\abx _exchange_client\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470760F-9444-4555-9CBE-D7A8CD821630}|Abx _Exchange_Client.csproj|solutionrelative:packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,26 +63,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Packet.cs",
               "DocumentMoniker": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\Packet.cs",
               "RelativeDocumentMoniker": "Packet.cs",
               "ToolTip": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\Packet.cs",
               "RelativeToolTip": "Packet.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA5wCAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T15:23:52.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AbxClient.cs",
               "DocumentMoniker": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\AbxClient.cs",
               "RelativeDocumentMoniker": "AbxClient.cs",
               "ToolTip": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\AbxClient.cs",
               "RelativeToolTip": "AbxClient.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAQwCgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T15:22:59.576Z",
               "EditorCaption": ""
@@ -95,7 +95,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Projects\\GitHub\\Abx _Exchange_Client\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T15:21:14.137Z",
               "EditorCaption": ""
